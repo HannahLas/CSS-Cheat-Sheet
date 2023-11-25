@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet" href="assets/styles.css" type="text/css">
+    <title>CSS Cheat Sheet</title>
+</head>
+<body>
+    <h1 class="header">CSS Cheatsheet</h1>
+    <p class ="intro">Need help remembering CSS code? Use this cheetsheet to automatically select the correct code that you can can copy and paste into your CSS. </p>
+    <div class =flexbox-container>
+        <div class = row>
+    <div class = "column">
+        <H2>CSS Flexbox Containers</H2>
+<p>To create a flexbox container (rows is the default property), use the following code:</p>   
+<pre> 
+    .row {
+        display:flex;
+        flex-wrap:wrap;
+    }
+</pre> </div>
+    <div class = "column">
+        <H2>Responsive Flexbox</H2>
+<p>To make FlexBox responsive you can simply use this code to stack the containers on top of each other:</p>  
+<pre>
+    @media (max-width: 800px) {
+        .row {
+          flex-direction: column;
+        flex-wrap: wrap;
+          align-content: center;
+        } 
+    }
+</pre>  </div>
+    <div class = "column">
+        <H2>CSS Grid</H2>
+<p>Build a 9 by 9 grid with the following code: </p> 
+<pre>
+    .grid {
+        display:grid;
+        width:100%
+        grid-template-columns: repeat 3 (1r)
+        grid-template-rows: repeat 3 (1fr)
+    }
+</pre>  
+ </div>
+</div>
+<div class = row>
+    <div class = "column">
+        <H2>Select Text</H2>
+<p>Use this code to select all of the text within a section you click on. </p> 
+<pre> 
+    pre {
+        -webkit-user-select: all;
+        user-select: all;
+      }
+</pre>   </div>
+    <div class = "column">
+        <a class = "target"><H2>Linear Gradient</H2></a>
+<p>This will create the linear gradient shown on this page:</p>
+    <pre>
+        column {
+        background: linear-gradient(45deg, 
+        paleturquoise, pink, skyblue);
+        }
+    </pre>  </div>
+    <div class = "column">
+        <H2>CSS Flexbox Columns</H2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla at quam magni, totam consequatur perferendis necessitatibus debitis reiciendis asperiores, facilis facere eum voluptatem? Omnis deleniti est at quisquam, sunt distinctio?</p>
+    </div>
+</div>
+
+    </div>
+</body>
+</html>
